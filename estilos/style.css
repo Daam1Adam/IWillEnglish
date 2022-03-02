@@ -17,6 +17,12 @@ body {
 
 /* estilos index */
 
+.navbar-collapse {
+
+    flex-grow: initial;
+}
+
+
 .container {
 
     display: grid;
@@ -24,12 +30,14 @@ body {
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 1fr auto auto 1fr;
     grid-template-areas: "box1 box1 box1""box2 box2 box2" "box3 box3 box3""box4 box4 box4";
+    padding: 0;
+    margin: 0;
 
 }
 
 .box-1 {
     grid-area: box1;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: #0763A6
 
 }
 
@@ -53,7 +61,7 @@ body {
 .box-4 {
 
     grid-area: box4;
-    background: linear-gradient(90deg, rgba(52,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: #0763A6
 }
 
 /* responsive index */
@@ -120,6 +128,12 @@ body {
 }
 
 /* fin responsive */
+
+.header {
+
+    background-color: #0763A6;
+}
+
 
 .navbar {
 
