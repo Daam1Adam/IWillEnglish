@@ -61,9 +61,9 @@ body {
 /* responsive index */
 
 @media only screen and (min-width: 768px) {
-	.container {
+	.container__index {
 		grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 9fr 5fr 1fr;
 	}
 
     .box-1 {
@@ -92,10 +92,10 @@ body {
 }    
 
 @media only screen and (min-width: 1024px) {
-    .container {
+    .container__index {
 
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
     }
     .box-1 {
         grid-column: 1 / span 3;
@@ -116,7 +116,7 @@ body {
 
     .box-4 {
         grid-column: 1 / 4;
-        grid-row: 3 / span 4 ;
+        grid-row: 3 / span 4;
     }
 
 }
@@ -320,7 +320,7 @@ footer {
 @media only screen and (min-width: 768px) {
 	.container__servicios{
 		grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
 	}
 
     .box-1__servicios {
@@ -354,7 +354,7 @@ footer {
     .container__servicios {
 
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
     }
     .box-1__servicios {
         grid-column: 1 / span 3;
@@ -475,7 +475,7 @@ footer {
 @media only screen and (min-width: 768px) {
 	.container__costos {
 		grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
 	}
 
     .box-1__costos {
@@ -509,7 +509,7 @@ footer {
     .container__costos {
 
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 9fr 1fr;
+        grid-template-rows: 1fr 7fr 1fr;
     }
     .box-1__costos {
         grid-column: 1 / span 3;
