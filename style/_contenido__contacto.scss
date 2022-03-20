@@ -71,35 +71,35 @@
 	.container__contacto {
 		grid-template-columns: 100px auto 100px;
         grid-template-rows: 1fr auto auto 1fr;
-        .box-1__proceso {
+        .box-1__contacto {
             grid-column: 1 / span 3;
             grid-row: 1 / 2;}
-        .box-2__proceso {
+        .box-2__contacto {
             grid-column: 2;
             grid-row: 2 ;
             justify-content: flex-end;}
-        .box-3__proceso {
+        .box-3__contacto {
             grid-column: 2 / 3;
             grid-row: 3;}
-        .box-4__proceso {
+        .box-4__contacto {
             grid-column: 1 / 4;
             grid-row: 4 / span 5 ;}
     }    
 }
 @media only screen and (min-width: 1024px) {
-    .container__proceso {
+    .container__contacto {
         grid-template-columns: 100px auto 100px;
         grid-template-rows: 1fr auto auto 1fr;
         .box-1__proceso {
             grid-column: 1 / span 3;
             grid-row: 1 / 2;}
-        .box-2__proceso {
+        .box-2__contacto {
             grid-column: 2;
             grid-row: 2 ;}
-        .box-3__proceso {
+        .box-3__contacto {
             grid-column: 2 / 3;
             grid-row: 3;}
-        .box-4__proceso {
+        .box-4__contacto {
             grid-column: 1 / 4;
             grid-row: 4 / span 5 ;
         }
