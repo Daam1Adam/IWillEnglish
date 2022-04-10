@@ -3,7 +3,7 @@
     grid-gap: 1em;
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 1fr auto auto 1fr;
-    grid-template-areas: "box1 box1 box1""box2 box2 box2" ".box3."   "box4 box4 box4";
+    grid-template-areas: "box1 box1 box1" "box2 box2 box2" ".box3."   "box4 box4 box4";
     .box-1__proceso {
         grid-area: box1;
         background-color: #0763A6; }
@@ -22,7 +22,9 @@
         align-items: center;
         .slider {
             width: 1000px;
-            margin-bottom: 80px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
             height: auto;
             overflow: hidden;
             ul {
@@ -66,12 +68,42 @@
     }
     .box-4__proceso {
         grid-area: box4;
-        background-color: #0763A6; }
-}
+        background-color: #0763A6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .footer__general {        
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Source Sans Pro', sans-serif;
+            .footer__distribucion {
+                font: bold 16px sans-serif;
+                text-align: center;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                .footer__informacion {
+                    .footer__nombre {
+                        color: #212529;
+                        font-size: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }        
+    }
+}    
 @media only screen and (min-width: 768px) {
 	.container__proceso {
 		grid-template-columns: 100px auto 100px;
-        grid-template-rows: 1fr auto auto 1fr;	
+        grid-template-rows: 1fr 1fr 5fr 1fr;	
         .box-1__proceso {
             grid-column: 1 / span 3;
             grid-row: 1 / 2; }
