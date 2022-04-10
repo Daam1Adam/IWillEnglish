@@ -198,7 +198,8 @@ header {
       .container__servicios .box-2__servicios .tarjeta .tarjeta__imagen {
         width: 70%;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        align-content: center; }
       .container__servicios .box-2__servicios .tarjeta .tarjeta__contenido {
         padding: 10px;
         text-align: center; }
@@ -289,7 +290,7 @@ header {
       grid-row: 2;
       justify-content: flex-end; }
       .container__servicios .box-2__servicios .tarjeta {
-        width: 200px; }
+        width: 300px; }
         .container__servicios .box-2__servicios .tarjeta .tarjeta__imagen {
           width: 200px;
           align-items: center;
@@ -341,7 +342,7 @@ header {
   grid-gap: 1em;
   grid-template-columns: 100px auto 100px;
   grid-template-rows: 1fr auto auto 1fr;
-  grid-template-areas: "box1 box1 box1" "box2 box2 box2" ".box3."   "box4 box4 box4"; }
+  grid-template-areas: "box1 box1 box1" "box2 box2 box2" ".box3." "box4 box4 box4"; }
   .container__proceso .box-1__proceso {
     grid-area: box1;
     background-color: #0763A6; }
@@ -356,7 +357,8 @@ header {
     grid-area: box3;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    align-content: center; }
     .container__proceso .box-3__proceso .slider {
       width: 1000px;
       justify-content: center;
@@ -419,7 +421,7 @@ header {
 @media only screen and (min-width: 768px) {
   .container__proceso {
     grid-template-columns: 100px auto 100px;
-    grid-template-rows: 1fr 1fr 5fr 1fr; }
+    grid-template-rows: 1fr auto auto 1fr; }
     .container__proceso .box-1__proceso {
       grid-column: 1 / span 3;
       grid-row: 1 / 2; }
@@ -427,16 +429,26 @@ header {
       grid-column: 2;
       grid-row: 2;
       justify-content: flex-end; }
+      .container__proceso .box-2__proceso h2 {
+        text-align: center;
+        font-size: 1rem;
+        color: #0763A6;
+        font-family: 'Source Sans Pro', sans-serif; }
     .container__proceso .box-3__proceso {
       grid-column: 2 / 3;
       grid-row: 3; }
       .container__proceso .box-3__proceso .slider {
-        width: 600px;
+        width: 500px;
         height: auto;
         overflow: hidden; }
     .container__proceso .box-4__proceso {
       grid-column: 1 / 4;
-      grid-row: 4 / span 5; } }
+      grid-row: 4 / span 5; }
+      .container__proceso .box-4__proceso .footer__distribucion .footer__nombre {
+        font-size: 10px; }
+      .container__proceso .box-4__proceso .footer__distribucion .footer__informacion {
+        float: none;
+        margin: 0 auto; } }
 
 @media only screen and (min-width: 1024px) {
   .container__proceso {
@@ -457,7 +469,12 @@ header {
         overflow: hidden; }
     .container__proceso .box-4__proceso {
       grid-column: 1 / 4;
-      grid-row: 4 / span 5; } }
+      grid-row: 4 / span 5; }
+      .container__proceso .box-4__proceso .footer__distribucion .footer__nombre {
+        font-size: 12px; }
+      .container__proceso .box-4__proceso .footer__distribucion .footer__informacion {
+        float: none;
+        margin: 0 auto; } }
 
 .container__contacto {
   display: grid;
