@@ -429,11 +429,6 @@ header {
       grid-column: 2;
       grid-row: 2;
       justify-content: flex-end; }
-      .container__proceso .box-2__proceso h2 {
-        text-align: center;
-        font-size: 1rem;
-        color: #0763A6;
-        font-family: 'Source Sans Pro', sans-serif; }
     .container__proceso .box-3__proceso {
       grid-column: 2 / 3;
       grid-row: 3; }
